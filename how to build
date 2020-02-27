@@ -1,0 +1,2 @@
+build options:
+-lncurses -std=c++11
