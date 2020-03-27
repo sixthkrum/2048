@@ -12,5 +12,5 @@ graphical_functions.o:	graphical_functions.cpp	graphical_functions.h
 
 .PHONY:	clean
 clean:
-	rm	2048
-	rm	main.o	array_manipulation.o	graphical_functions.o
+	rm	-f	2048
+	rm	-f	main.o	array_manipulation.o	graphical_functions.o
