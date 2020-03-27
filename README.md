@@ -3,4 +3,4 @@
 Move the blocks with the arrow keys
 
 to build:
-g++ main.cpp -lncurses -std=c++11
+run 'make' in the directory

@@ -20,7 +20,7 @@ keypad(stdscr , 1);
 attron(A_BOLD);
 int c;
 matrix_make();
-int numarr[4][4] = {{0 , 0 , 0 , 0} , {0 , 0 , 0 , 0} , {0 , 0 , 0 , 0} , {0 , 0 , 0 , 0}}; 
+int numarr[4][4] = {{0 , 0 , 0 , 0} , {0 , 0 , 0 , 0} , {0 , 0 , 0 , 0} , {0 , 0 , 0 , 0}};
 int empty_spaces = 16;//full array size as we need a location to put our random number in and in the beginning we have akll the spots available but could be anything if we call numbers_set at the beginning of the loop
 bool did_we_move = TRUE;
 bool possible_to_move = TRUE;
@@ -53,19 +53,19 @@ switch (c)
 
 {
 
-case KEY_UP : 
+case KEY_UP :
 did_we_move = components_move_up(numarr);
 break;
 
-case KEY_DOWN : 
+case KEY_DOWN :
 did_we_move = components_move_down(numarr);
 break;
 
-case KEY_LEFT : 
+case KEY_LEFT :
 did_we_move = components_move_left(numarr);
 break;
 
-case KEY_RIGHT : 
+case KEY_RIGHT :
 did_we_move = components_move_right(numarr);
 break;
 
